@@ -8,7 +8,7 @@
 
 .container {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #E6E6E6;
     transition: all 1s ease;
 
@@ -41,7 +41,7 @@
 
 main {
     position: relative;
-    height: 100vh;
+    max-height: 100vh;
     margin: 0 1em;
     display: flex;
 }
@@ -120,6 +120,7 @@ main {
     font-weight: 700;
     font-size: 15px;
 }
+
 .allLinks button:hover {
     box-shadow: 0px -5px 7px #c7c2c2 inset;
 
@@ -127,7 +128,18 @@ main {
 
 
 a {
-    text-decoration: none;
+    text-decoration: none; 
+}
+
+.allLinks #button {
+    color: #4E5863;
+}
+
+.resume {
+    color: #4E5863;
+}
+
+.skills {
     color: #4E5863;
 }
 
@@ -175,13 +187,14 @@ a {
 
 
 .upper {
-    height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     place-items: center;
     width: 100%;
+    padding: 10em 0;
 }
 
 .fullName {
@@ -189,7 +202,6 @@ a {
     font-weight: 700;
     color: #737373;
     background: url("https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
@@ -255,6 +267,7 @@ a {
     justify-content: center;
     place-items: center;
     gap: 20px;
+    padding-top: 5em;
 
 }
 
@@ -265,7 +278,9 @@ a {
 
 .about2 {
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 10em;
+    padding-top: 2em;
 }
 
 .head1{
@@ -306,6 +321,7 @@ a {
     width: 100%;
     height: 100%;
     padding: 0 4em;
+    padding-bottom: 2em;
 }
 
 .cards{
@@ -319,7 +335,7 @@ a {
     width: 40%;
     padding: 1em 1em;
     background-color: #E6E6E6;
-    box-shadow: 0px 0px 10px #a8a4a4;
+    box-shadow: 0px 0px 10px rgb(168, 164, 164);
 
 }
 
@@ -339,14 +355,17 @@ a {
 .cardh3 {
     font-weight: 700;
     margin-bottom: 1em;
+    color: #494747;
+
 
 }
 
 .fa-code, .fa-mobile {
     margin-bottom: 2em;
-    color: #FFFFFF;
+    color: #494747;
     
 }
+
 
 .card1:hover {
     background-color: #E6E6E6;
@@ -406,12 +425,12 @@ a {
 
 .Portfolio {
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
 }
 .port {
     text-align: center;
     font-weight: 600;
-    margin-block: 3em 2em;
+    margin-block: 2em 2em;
     font-size:clamp(30px,4vw,70px);
 }
 
@@ -484,13 +503,14 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 1em;
 };
 
 .contactMe{
     width: 100%;
     height: 100vh;
     padding: 0 1em;
+    padding-top: 3em;
+    margin-top: 2em;
 }
 
 
@@ -526,6 +546,7 @@ form {
     text-align: center;
     font-weight: 600;
     font-size:clamp(30px,4vw,70px);
+    margin-block: 0em 2em;
 }
 
 .deliver {
@@ -535,6 +556,7 @@ form {
 .emailPhone{
     padding: 0.5em 0;
     width: 100%;
+    height: 100%;
 }
 
 .phonenumber{
@@ -625,7 +647,9 @@ form {
     }
 
     .closeMenu {
-        transform: translateX(-7em);
+ 
+        transform: translate(-5em,-3em);
+        
     }
 
     .preview1, .preview2, .preview3{
