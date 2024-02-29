@@ -24,6 +24,12 @@ let submit = document.querySelector("#submit");
 let input = document.querySelector("input");
 let email = document.querySelector("#email");
 
+let first4 = document.querySelector("#first4");
+let second4 = document.querySelector("#second4");
+let worklink4 = document.querySelector("#worklink4");
+let repo4 = document.querySelector("#repo4");
+
+console.log(first4,second4,worklink4,repo4);
 
 
 let showMenu = ()=>{
@@ -77,21 +83,25 @@ const closeNavbar = ()=>{
 
 let counter = 5;
 let sent = ()=>{
+    counter--
     setInterval(() => {
-        counter--
         if ((input.type="text")&& (email.type ="email")) {
-    
-            deliver.textContent = `message sent successfully`
-        }
-        if (counter<=0) {
-    
-            deliver.textContent =""
+            
             
         }
+        
+        if (counter<=0) {
+            
+            deliver.textContent = `Message sent successfully`
+            deliver.textContent =""
+            
+        } 
+
     }, 1000);
+    
 }
 
-submit.addEventListener("click", ()=>{
+document.querySelector(".form").addEventListener("submit", ()=>{
     sent()
 })
 
@@ -175,6 +185,25 @@ second2.onmouseout = ()=>{
 second3.onmouseout = ()=>{
     first3.style.display = "flex";
     second3.style.display = "none";
+};
+
+
+worklink4.onmouseenter = ()=>{
+    first4.style.display ="none";
+    second4.style.display ="flex";
+}
+repo4.onmouseenter = ()=>{
+    first4.style.display ="none";
+    second4.style.display ="flex";
+}
+first4.onmouseover = ()=>{
+    first4.style.display ="none";
+    second4.style.display ="flex";
+};
+
+second4.onmouseout = ()=>{
+    first4.style.display = "flex";
+    second4.style.display = "none";
 };
 
 
