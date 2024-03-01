@@ -29,7 +29,11 @@ let second4 = document.querySelector("#second4");
 let worklink4 = document.querySelector("#worklink4");
 let repo4 = document.querySelector("#repo4");
 
-console.log(first4,second4,worklink4,repo4);
+let first5 = document.querySelector("#first5");
+let second5 = document.querySelector("#second5");
+let worklink5 = document.querySelector("#worklink5");
+let repo5 = document.querySelector("#repo5");
+
 
 
 let showMenu = ()=>{
@@ -192,10 +196,12 @@ worklink4.onmouseenter = ()=>{
     first4.style.display ="none";
     second4.style.display ="flex";
 }
+
 repo4.onmouseenter = ()=>{
     first4.style.display ="none";
     second4.style.display ="flex";
 }
+
 first4.onmouseover = ()=>{
     first4.style.display ="none";
     second4.style.display ="flex";
@@ -204,6 +210,26 @@ first4.onmouseover = ()=>{
 second4.onmouseout = ()=>{
     first4.style.display = "flex";
     second4.style.display = "none";
+};
+
+worklink5.onmouseenter = ()=>{
+    first5.style.display ="none";
+    second5.style.display ="flex";
+}
+
+repo5.onmouseenter = ()=>{
+    first5.style.display ="none";
+    second5.style.display ="flex";
+}
+
+first5.onmouseover = ()=>{
+    first5.style.display ="none";
+    second5.style.display ="flex";
+};
+
+second5.onmouseout = ()=>{
+    first5.style.display = "flex";
+    second5.style.display = "none";
 };
 
 

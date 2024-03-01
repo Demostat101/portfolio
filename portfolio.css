@@ -452,7 +452,7 @@ a {
     
 }
 
-.first1, .first2, .first3,#first4 {
+.first1, .first2, .first3,#first4, #first5 {
     display: flex;
     justify-content: center;
     place-items: center;
@@ -462,7 +462,7 @@ a {
     width: 21em;
 }
 
-.second1, .second2, .second3, #second4 {
+.second1, .second2, .second3, #second4, #second5 {
     display: none;
     flex-direction: column;
     justify-content: space-evenly;
@@ -482,7 +482,7 @@ a {
     box-shadow: 0px 0px 10px #a19c9c;
 }
 
-.preview1, .preview2, .preview3, .preview4{
+.preview1, .preview2, .preview3, .preview4, .preview5{
     display: none;
 }
 
@@ -652,7 +652,7 @@ form {
         
     }
 
-    .preview1, .preview2, .preview3, .preview4{
+    .preview1, .preview2, .preview3, .preview4, .preview5{
         display: flex;
         position: absolute;
         bottom: 1em;
@@ -663,7 +663,7 @@ form {
         font-weight: 600;
     }
 
-    .first1, .first2, .first3, #first4{
+    .first1, .first2, .first3, #first4, #first5{
         position: relative;
     }
 
